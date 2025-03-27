@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background: #43cea2; 
+    background: -webkit-linear-gradient(to bottom, #185a9d, #43cea2);  
+    background: linear-gradient(to bottom, #185a9d, #43cea2); 
+    width: 90%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.3);
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search input {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.search button {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.weather-icon {
+    width: 100px;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.temp {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.city {
+    font-size: 24px;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.details {
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+}
+
+.details img {
+    width: 40px;
+}
+
+.details p {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+span{
+color: rgb(245, 240, 235);
+padding: 5px ;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+    .temp {
+        font-size: 32px;
+    }
+    .city {
+        font-size: 20px;
+    }
+    .details p {
+        font-size: 16px;
+    }
+}
+
+
+
+
